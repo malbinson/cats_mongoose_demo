@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+userName: <%= user.userName %>
+<br>
+<a href="/profile">Profile</a>
+
+<form action="/addCat" method="post">
+    <input type="hidden" name="userName" value="<%= user.userName %>"
+    <div>
+        <label>Cat Name:</label>
+        <input type="text" name="catName" value="felix"/>
+    </div>
+    <div>
+        <input type="submit" value="Add Cat"/>
+    </div>
+</form>
+
+</body>
+
+
+</html>

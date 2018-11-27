@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<a href="/logout">Logout</a>
+<br>
+User Name Is: <%= user.userName %>
+<br>
+<a href="/addCat">Add a Cat</a>
+<br>
+Your cats:<br>
+<% for(var i = 0; i<cats.length;i++) { %>
+    <%= cats[i].name %>
+    <br>
+<% } %>
+
+</body>
+
+
+</html>
